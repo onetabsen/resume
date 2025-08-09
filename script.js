@@ -53,6 +53,15 @@
         "Git","Altium Designer","DipTrace","Документация","Тестовые стенды"
       ],
       contactsTitle: "Контакты",
+      techTitle: "Технические компетенции",
+      tech: [
+        "MCU: STM32F777, STM32L496, STM32 (CMSIS/HAL), ESP32 (ESP‑IDF/ADF), BlueNRG‑2",
+        "RTOS/Архитектуры: FreeRTOS, bare‑metal, драйверы, периферия",
+        "Языки: C/C++ (C++11/20), Python, Dart, C# (Avalonia)",
+        "Инструменты: Keil uVision, Git, Altium Designer, DipTrace, ЕСКД/ЕСПД",
+        "Протоколы: DALI/DALI‑2 (IEC 62386), DMX/RDM/ArtNet, Modbus RTU, BLE, UART/SPI/I2C/CAN",
+        "HMI/SCADA: iRidi Studio, iRidi SCADA (Smart Opora/Office/Lounge)"
+      ],
       portfolioTitle: "Портфолио/Награды",
       portfolio: [
         { t: "RADUGA — Декоративные светильники", u: "https://raduga-light.com/ru/catalog/arkhitekturnoe-osveshchenie/dekorativnye-svetilniki/" },
@@ -120,6 +129,15 @@
         "Git","Altium Designer","DipTrace","Docs","Test benches"
       ],
       contactsTitle: "Contacts",
+      techTitle: "Technical Competencies",
+      tech: [
+        "MCU: STM32F777, STM32L496, STM32 (CMSIS/HAL), ESP32 (ESP‑IDF/ADF), BlueNRG‑2",
+        "RTOS/Arch: FreeRTOS, bare‑metal, drivers, peripherals",
+        "Languages: C/C++ (C++11/20), Python, Dart, C# (Avalonia)",
+        "Tools: Keil uVision, Git, Altium Designer, DipTrace, ESKD/ESPD",
+        "Protocols: DALI/DALI‑2 (IEC 62386), DMX/RDM/ArtNet, Modbus RTU, BLE, UART/SPI/I2C/CAN",
+        "HMI/SCADA: iRidi Studio, iRidi SCADA (Smart Opora/Office/Lounge)"
+      ],
       portfolioTitle: "Portfolio/Awards",
       portfolio: [
         { t: "RADUGA — Decorative lighting", u: "https://raduga-light.com/ru/catalog/arkhitekturnoe-osveshchenie/dekorativnye-svetilniki/" },
@@ -187,6 +205,15 @@
         "Git","Altium Designer","DipTrace","文档","测试工装"
       ],
       contactsTitle: "联系方式",
+      techTitle: "技术能力",
+      tech: [
+        "MCU：STM32F777、STM32L496、STM32（CMSIS/HAL）、ESP32（ESP‑IDF/ADF）、BlueNRG‑2",
+        "RTOS/架构：FreeRTOS、裸机、驱动、外设",
+        "语言：C/C++（C++11/20）、Python、Dart、C#（Avalonia）",
+        "工具：Keil uVision、Git、Altium Designer、DipTrace、ESKD/ESPD",
+        "协议：DALI/DALI‑2（IEC 62386）、DMX/RDM/ArtNet、Modbus RTU、BLE、UART/SPI/I2C/CAN",
+        "HMI/SCADA：iRidi Studio、iRidi SCADA（Smart Opora/Office/Lounge）"
+      ],
       portfolioTitle: "作品/奖项",
       portfolio: [
         { t: "RADUGA — 装饰类灯具", u: "https://raduga-light.com/ru/catalog/arkhitekturnoe-osveshchenie/dekorativnye-svetilniki/" },
@@ -207,6 +234,7 @@
   const expList = qs('#expList');
   const eduList = qs('#eduList');
   const skillsList = qs('#skillsList');
+  const techList = qs('#techList');
   const portfolioList = qs('#portfolioList');
 
   function render(lang){
@@ -241,6 +269,10 @@
 
     eduList.innerHTML = L.education.map(e=>`<li>${e}</li>`).join('');
     skillsList.innerHTML = L.skills.map(s=>`<span class="tag">${s}</span>`).join('');
+    if (techList && L.tech) {
+      techList.innerHTML = L.tech.map(t=>`<li>${t}</li>`).join('');
+      qs('#tech h2').textContent = L.techTitle || 'Технические компетенции';
+    }
     if (portfolioList && L.portfolio) {
       portfolioList.innerHTML = L.portfolio.map(i=>`<li><a href="${i.u}" target="_blank" rel="noopener">${i.t}</a></li>`).join('');
       qs('#portfolio h2').textContent = L.portfolioTitle || 'Портфолио';
