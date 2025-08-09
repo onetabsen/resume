@@ -2,9 +2,9 @@
   const T = {
     ru: {
       name: "Томаш Павел Сергеевич",
-      title: "Инженер-программист (Embedded/IoT)",
+      title: "Старший инженер‑программист (Embedded)",
       aboutTitle: "Обо мне",
-      aboutText: "Инженер встраиваемых систем: STM32/ESP32 (C/C++, FreeRTOS, HAL/CMSIS), ПО для производственных испытаний, code review и документация. Ориентирован на международные проекты; планирую релокацию в Китай (Шэньчжэнь/Шанхай/Пекин). Английский B2, китайский A1.",
+      aboutText: "Старший embedded‑инженер: STM32/ESP32 (C/C++, FreeRTOS, HAL/CMSIS), DALI/DMX/BLE, API/SDK, серийное производство; Git‑флоу, code‑review, ЕСКД/ЕСПД. Открыт к релокации (Китай/Европа). Английский B2, китайский A1.",
       expTitle: "Опыт работы",
       experience: [
         {
@@ -13,9 +13,9 @@
           location: "Москва",
           period: "11.2024 — наст. время",
           bullets: [
-            "STM32: C/C++, FreeRTOS, HAL/CMSIS; драйверы UART/SPI/I2C, таймеры, ADC",
-            "ПО для тестовых стендов и выпусков; сопровождение legacy-кода",
-            "Code review, документация; взаимодействие с производством"
+            "Участие в модулях связи с землей и видеостриминга (в составе команды)",
+            "Code review; поддержка внутренней библиотеки core и репозитория драйверов",
+            "Участие во внедрении практик ревью и автоматизации"
           ]
         },
         {
@@ -24,8 +24,8 @@
           location: "Москва",
           period: "2021 — 2024",
           bullets: [
-            "Прошивки для встраиваемых устройств; ПО для производственных испытаний",
-            "Планирование релизов; повышение качества и надёжности"
+            "Настройка/сопровождение Helvar Designer (Router 905, 40 БП), Стрелец‑Мастер, iRidi Smart Office (Яндекс), СУО ‘Аврора’ + M‑Configurator, MasterSCADA 3→BMS",
+            "Награды ‘Золотой фотон’; ПО в реестре Минцифры РФ"
           ]
         },
         {
@@ -52,13 +52,26 @@
         "UART","SPI","I2C","CAN","Modbus RTU","DALI/IEC62386","DMX/RDM","BLE",
         "Git","Altium Designer","DipTrace","Документация","Тестовые стенды"
       ],
-      contactsTitle: "Контакты"
+      contactsTitle: "Контакты",
+      portfolioTitle: "Портфолио/Награды",
+      portfolio: [
+        { t: "RADUGA — Декоративные светильники", u: "https://raduga-light.com/ru/catalog/arkhitekturnoe-osveshchenie/dekorativnye-svetilniki/" },
+        { t: "RADUGA — Линейные светильники", u: "https://raduga-light.com/ru/catalog/arkhitekturnoe-osveshchenie/lineynye-svetilniki/" },
+        { t: "RADUGA — Маломощные прожекторы", u: "https://raduga-light.com/ru/catalog/arkhitekturnoe-osveshchenie/malomoshchnye-prozhektory/" },
+        { t: "RADUGA — Прожекторы", u: "https://raduga-light.com/ru/catalog/arkhitekturnoe-osveshchenie/prozhektory/" },
+        { t: "Минцифры РФ — Реестр ПО (TRION)", u: "https://reestr.digital.gov.ru/reestr/2338137/?sphrase_id=4767956" },
+        { t: "‘Золотой фотон’ — Светильник", u: "https://www.smartcity-award.com/nominations?nomination=169&id=332" },
+        { t: "‘Золотой фотон’ — Источник питания и ПО", u: "https://www.smartcity-award.com/nominations?nomination=224&id=635" },
+        { t: "‘Золотой фотон’ — Источник питания TW (СТ‑1)", u: "https://www.smartcity-award.com/nominations?nomination=312&id=1762" },
+        { t: "‘Золотой фотон’ — Умный офисный светильник", u: "https://www.smartcity-award.com/nominations?nomination=349&id=1724" },
+        { t: "Командная награда — Геленджик Арена", u: "https://www.smartcity-award.com/nominations?nomination=349&id=1817" }
+      ]
     },
     en: {
       name: "Pavel Tomash",
-      title: "Embedded/IoT Software Engineer",
+      title: "Senior Embedded Software Engineer",
       aboutTitle: "About",
-      aboutText: "Embedded engineer: STM32/ESP32 (C/C++, FreeRTOS, HAL/CMSIS); production test software; code review & documentation. Open to relocate to China (Shenzhen/Shanghai/Beijing). English B2, Chinese A1.",
+      aboutText: "Senior embedded engineer: STM32/ESP32 (C/C++, FreeRTOS, HAL/CMSIS), DALI/DMX/BLE, API/SDK, mass manufacturing; Git flow, code review, ESKD/ESPD. Open to relocation (China/Europe). English B2, Chinese A1.",
       expTitle: "Experience",
       experience: [
         {
@@ -106,14 +119,27 @@
         "UART","SPI","I2C","CAN","Modbus RTU","DALI/IEC62386","DMX/RDM","BLE",
         "Git","Altium Designer","DipTrace","Docs","Test benches"
       ],
-      contactsTitle: "Contacts"
+      contactsTitle: "Contacts",
+      portfolioTitle: "Portfolio/Awards",
+      portfolio: [
+        { t: "RADUGA — Decorative lighting", u: "https://raduga-light.com/ru/catalog/arkhitekturnoe-osveshchenie/dekorativnye-svetilniki/" },
+        { t: "RADUGA — Linear lighting", u: "https://raduga-light.com/ru/catalog/arkhitekturnoe-osveshchenie/lineynye-svetilniki/" },
+        { t: "RADUGA — Low‑power floodlights", u: "https://raduga-light.com/ru/catalog/arkhitekturnoe-osveshchenie/malomoshchnye-prozhektory/" },
+        { t: "RADUGA — Floodlights", u: "https://raduga-light.com/ru/catalog/arkhitekturnoe-osveshchenie/prozhektory/" },
+        { t: "Ministry registry (RU software)", u: "https://reestr.digital.gov.ru/reestr/2338137/?sphrase_id=4767956" },
+        { t: "Golden Photon — Luminaire", u: "https://www.smartcity-award.com/nominations?nomination=169&id=332" },
+        { t: "Golden Photon — PSU & Software", u: "https://www.smartcity-award.com/nominations?nomination=224&id=635" },
+        { t: "Golden Photon — PSU with TW (ST‑1)", u: "https://www.smartcity-award.com/nominations?nomination=312&id=1762" },
+        { t: "Golden Photon — Smart office luminaire", u: "https://www.smartcity-award.com/nominations?nomination=349&id=1724" },
+        { t: "Team award — Gelendzhik Arena", u: "https://www.smartcity-award.com/nominations?nomination=349&id=1817" }
+      ]
     },
     zh: {
       name: "Pavel Tomash",
-      title: "嵌入式/物联网软件工程师",
+      title: "高级嵌入式软件工程师",
       aboutTitle: "关于我",
-      aboutText: "专注 STM32/ESP32 固件（C/C++，FreeRTOS，HAL/CMSIS），量产测试软件、代码评审与文档。愿赴华（深圳/上海/北京）。英语 B2，中文 A1（在学）。",
-      expTitle: "工作经历",
+            aboutText: "高级嵌入式工程师：STM32/ESP32（C/C++，FreeRTOS，HAL/CMSIS），DALI/DMX/BLE，API/SDK，量产；Git流程、代码评审、ESKD/ESPD。可搬迁（中国/欧洲）。英语B2，中文A1。",
+       expTitle: "工作经历",
       experience: [
         {
           role: "资深嵌入式工程师",
@@ -160,7 +186,20 @@
         "UART","SPI","I2C","CAN","Modbus RTU","DALI/IEC62386","DMX/RDM","BLE",
         "Git","Altium Designer","DipTrace","文档","测试工装"
       ],
-      contactsTitle: "联系方式"
+      contactsTitle: "联系方式",
+      portfolioTitle: "作品/奖项",
+      portfolio: [
+        { t: "RADUGA — 装饰类灯具", u: "https://raduga-light.com/ru/catalog/arkhitekturnoe-osveshchenie/dekorativnye-svetilniki/" },
+        { t: "RADUGA — 线性灯具", u: "https://raduga-light.com/ru/catalog/arkhitekturnoe-osveshchenie/lineynye-svetilniki/" },
+        { t: "RADUGA — 小功率投光", u: "https://raduga-light.com/ru/catalog/arkhitekturnoe-osveshchenie/malomoshchnye-prozhektory/" },
+        { t: "RADUGA — 投光灯", u: "https://raduga-light.com/ru/catalog/arkhitekturnoe-osveshchenie/prozhektory/" },
+        { t: "俄官方软件名录", u: "https://reestr.digital.gov.ru/reestr/2338137/?sphrase_id=4767956" },
+        { t: "“金色光子” — 灯具", u: "https://www.smartcity-award.com/nominations?nomination=169&id=332" },
+        { t: "“金色光子” — 电源与软件", u: "https://www.smartcity-award.com/nominations?nomination=224&id=635" },
+        { t: "“金色光子” — TW 功能电源（ST‑1）", u: "https://www.smartcity-award.com/nominations?nomination=312&id=1762" },
+        { t: "“金色光子” — 智能办公灯具", u: "https://www.smartcity-award.com/nominations?nomination=349&id=1724" },
+        { t: "团队奖 — 格连吉克体育馆", u: "https://www.smartcity-award.com/nominations?nomination=349&id=1817" }
+      ]
     }
   };
 
@@ -168,6 +207,7 @@
   const expList = qs('#expList');
   const eduList = qs('#eduList');
   const skillsList = qs('#skillsList');
+  const portfolioList = qs('#portfolioList');
 
   function render(lang){
     const L = T[lang] || T.ru;
@@ -201,6 +241,10 @@
 
     eduList.innerHTML = L.education.map(e=>`<li>${e}</li>`).join('');
     skillsList.innerHTML = L.skills.map(s=>`<span class="tag">${s}</span>`).join('');
+    if (portfolioList && L.portfolio) {
+      portfolioList.innerHTML = L.portfolio.map(i=>`<li><a href="${i.u}" target="_blank" rel="noopener">${i.t}</a></li>`).join('');
+      qs('#portfolio h2').textContent = L.portfolioTitle || 'Портфолио';
+    }
 
     localStorage.setItem('lang', lang);
     location.hash = '#' + lang;
