@@ -8,7 +8,7 @@
       expTitle: "Опыт работы",
       experience: [
         {
-          role: "Ведущий разработчик встраиваемых систем",
+          role: "Старший разработчик встраиваемых систем",
           company: "1440.space",
           location: "Москва",
           period: "11.2024 — наст. время",
@@ -62,7 +62,7 @@
       expTitle: "Experience",
       experience: [
         {
-          role: "Lead Embedded Engineer",
+          role: "Senior Embedded Engineer",
           company: "1440.space",
           location: "Moscow",
           period: "Nov 2024 — present",

@@ -10,7 +10,7 @@
 Инженер-программист встраиваемых систем с опытом разработки прошивок на STM32/ESP32 (C/C++, FreeRTOS, HAL/CMSIS), созданием ПО для производственных испытаний, интеграцией с R&D и производством, практиками code review и документацией. Интерес к международным проектам и переезду в Китай. Готов к коммуникации на английском (B2), изучаю китайский (A1, 简体中文)。
 
 ## Опыт работы
-**Ведущий разработчик встраиваемых систем — 1440.space (Москва)**  — 11.2024 — наст. время
+**Старший разработчик встраиваемых систем — 1440.space (Москва)**  — 11.2024 — наст. время
 - Прошивки для STM32 (C/C++, FreeRTOS, HAL/CMSIS), драйверы периферии (UART/SPI/I2C, таймеры, ADC).
 - ПО для тестовых стендов и выпусков; сопровождение legacy-кода, повышение отказоустойчивости.
 - Code review, документация (datasheets, FAQs, Readme), взаимодействие с производством.
@@ -60,7 +60,7 @@
 Embedded software engineer experienced in STM32/ESP32 firmware (C/C++, FreeRTOS, HAL/CMSIS), production test software, code review and documentation. Internationally minded, planning relocation to China. English B2, learning Chinese (A1).
 
 ## Experience (selected)
-- Lead Embedded Engineer — 1440.space (11/2024–present): STM32 firmware, test benches, legacy support, documentation.
+- Senior Embedded Engineer — 1440.space (11/2024–present): STM32 firmware, test benches, legacy support, documentation.
 - Software Engineer/Team Lead — TRION (2021–2024): embedded firmware and production testing software; release planning; quality improvements.
 - Embedded Engineer — TM RADUGA (2020–2021): STM32 (HAL/CMSIS), ESP32 (ESP‑IDF/ADF), API integration; DC‑DC basics.
 - Intern — Kalashnikov Group (2020): STM32L412, BlueNRG‑2; technical documentation.
