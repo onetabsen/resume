@@ -24,7 +24,8 @@
           location: "Москва",
           period: "2021 — 2024",
           bullets: [
-            "Настройка/сопровождение Helvar Designer (Router 905, 40 БП), Стрелец‑Мастер, iRidi Smart Office (Яндекс), СУО ‘Аврора’ + M‑Configurator, MasterSCADA 3→BMS",
+            "Запуск, сопровождение и поддержка производства изделий (≈150 000 в год); ‘с нуля’ от идеи до клиента (трассировка плат, корпуса, hardware engineering)",
+            "Настройка/сопровождение Helvar Designer (Router 905, 40 БП), Стрелец‑Мастер, iRidi Smart Office, СУО ‘Аврора’ + M‑Configurator, MasterSCADA 3→BMS",
             "Награды ‘Золотой фотон’; ПО в реестре Минцифры РФ"
           ]
         },
@@ -57,7 +58,7 @@
       tech: [
         "MCU: STM32F777, STM32L496, STM32 (CMSIS/HAL), ESP32 (ESP‑IDF/ADF), BlueNRG‑2",
         "RTOS/Архитектуры: FreeRTOS, bare‑metal, драйверы, периферия",
-        "Языки: C/C++ (C++11/20), Python, Dart, C# (Avalonia)",
+        "Языки: C/C++ (C++11/20), Python, Dart (Flutter), C# (Avalonia)",
         "Инструменты: Keil uVision, Git, Altium Designer, DipTrace, ЕСКД/ЕСПД",
         "Протоколы: DALI/DALI‑2 (IEC 62386), DMX/RDM/ArtNet, Modbus RTU, BLE, UART/SPI/I2C/CAN",
         "HMI/SCADA: iRidi Studio, iRidi SCADA (Smart Opora/Office/Lounge)"
@@ -100,8 +101,8 @@
           location: "Moscow",
           period: "2021 — 2024",
           bullets: [
-            "Embedded firmware; production testing software",
-            "Release planning; quality & reliability improvements"
+            "Embedded firmware; production testing software; mass manufacturing (≈150,000 units/year); idea→B2B delivery (PCB layout, enclosures, HW engineering); DALI/DALI‑2 subject‑matter expert",
+              "Release planning; quality & reliability improvements"
           ]
         },
         {
@@ -133,7 +134,7 @@
       tech: [
         "MCU: STM32F777, STM32L496, STM32 (CMSIS/HAL), ESP32 (ESP‑IDF/ADF), BlueNRG‑2",
         "RTOS/Arch: FreeRTOS, bare‑metal, drivers, peripherals",
-        "Languages: C/C++ (C++11/20), Python, Dart, C# (Avalonia)",
+        "Languages: C/C++ (C++11/20), Python, Dart (Flutter), C# (Avalonia)",
         "Tools: Keil uVision, Git, Altium Designer, DipTrace, ESKD/ESPD",
         "Protocols: DALI/DALI‑2 (IEC 62386), DMX/RDM/ArtNet, Modbus RTU, BLE, UART/SPI/I2C/CAN",
         "HMI/SCADA: iRidi Studio, iRidi SCADA (Smart Opora/Office/Lounge)"
@@ -209,7 +210,7 @@
       tech: [
         "MCU：STM32F777、STM32L496、STM32（CMSIS/HAL）、ESP32（ESP‑IDF/ADF）、BlueNRG‑2",
         "RTOS/架构：FreeRTOS、裸机、驱动、外设",
-        "语言：C/C++（C++11/20）、Python、Dart、C#（Avalonia）",
+        "语言：C/C++（C++11/20）、Python、Dart（Flutter）、C#（Avalonia）",
         "工具：Keil uVision、Git、Altium Designer、DipTrace、ESKD/ESPD",
         "协议：DALI/DALI‑2（IEC 62386）、DMX/RDM/ArtNet、Modbus RTU、BLE、UART/SPI/I2C/CAN",
         "HMI/SCADA：iRidi Studio、iRidi SCADA（Smart Opora/Office/Lounge）"
@@ -269,9 +270,10 @@
 
     eduList.innerHTML = L.education.map(e=>`<li>${e}</li>`).join('');
     skillsList.innerHTML = L.skills.map(s=>`<span class="tag">${s}</span>`).join('');
-    if (techList && L.tech) {
-      techList.innerHTML = L.tech.map(t=>`<li>${t}</li>`).join('');
-      qs('#tech h2').textContent = L.techTitle || 'Технические компетенции';
+          if (techList && L.tech) {
+        techList.innerHTML = L.tech.map(t=>`<li>${t}</li>`).join('');
+                const techH2 = document.querySelector('#tech h2');
+        if (techH2) techH2.textContent = L.techTitle || 'Технические компетенции';
     }
     if (portfolioList && L.portfolio) {
       portfolioList.innerHTML = L.portfolio.map(i=>`<li><a href="${i.u}" target="_blank" rel="noopener">${i.t}</a></li>`).join('');
